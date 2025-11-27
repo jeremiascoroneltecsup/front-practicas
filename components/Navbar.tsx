@@ -12,22 +12,23 @@ const Navbar: React.FC = () => {
           <div className="flex items-center gap-12">
             <div className="flex-shrink-0 flex items-center gap-3 cursor-pointer group">
               <div className="relative">
-                 <div className="absolute inset-0 bg-brand-primary blur-md opacity-20 group-hover:opacity-40 transition-opacity rounded-full"></div>
-                 <Shield className="w-8 h-8 text-brand-primary fill-current relative z-10" />
-                 <span className="absolute inset-0 flex items-center justify-center text-[10px] font-black text-white z-20 pt-1">FS</span>
+                 <div className="w-12 h-12 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-lg flex items-center justify-center shadow-lg group-hover:shadow-yellow-500/50 transition-shadow">
+                   <span className="text-white font-black text-2xl">FS</span>
+                 </div>
               </div>
               <div className="flex flex-col">
-                  <span className="font-extrabold text-xl tracking-tight text-white leading-none">
-                    FULLSTACK
+                  <span className="font-extrabold text-xl tracking-tight leading-none">
+                    <span className="text-white">FULL</span><span className="text-yellow-400">STACK</span>
                   </span>
-                  <span className="text-[10px] tracking-[0.2em] text-brand-primary uppercase font-bold">Technology School</span>
+                  <span className="text-[9px] tracking-[0.15em] text-yellow-400 uppercase font-bold">Technology School</span>
               </div>
             </div>
             <div className="hidden md:block">
               <div className="flex items-baseline space-x-6">
-                <a href="#" className="text-gray-200 hover:text-brand-primary font-medium text-sm transition-colors">Cursos</a>
-                <a href="#" className="text-gray-200 hover:text-brand-primary font-medium text-sm transition-colors">Rutas</a>
-                <a href="#" className="text-gray-200 hover:text-brand-primary font-medium text-sm transition-colors">Comunidad</a>
+                <a href="#" className="text-gray-200 hover:text-yellow-400 font-medium text-sm transition-colors">Inicio</a>
+                <a href="#" className="text-gray-200 hover:text-yellow-400 font-medium text-sm transition-colors">Plan Completo Odoo</a>
+                <a href="#" className="text-gray-200 hover:text-yellow-400 font-medium text-sm transition-colors">Precios</a>
+                <a href="#" className="text-gray-200 hover:text-yellow-400 font-medium text-sm transition-colors">Mis Cursos</a>
               </div>
             </div>
           </div>

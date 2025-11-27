@@ -5,109 +5,106 @@ const Pricing: React.FC = () => {
   return (
     <section className="py-20 relative">
       {/* Background glow for pricing */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-3xl h-full bg-brand-primary/5 blur-[120px] rounded-full pointer-events-none"></div>
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-3xl h-full bg-purple-600/5 blur-[120px] rounded-full pointer-events-none"></div>
 
-      <div className="max-w-4xl mx-auto px-4 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 relative z-10">
         
-        {/* Main Title Box */}
-        <div className="flex justify-center mb-12">
-            <div className="inline-block relative">
-                <div className="absolute inset-0 border-2 border-brand-primary rounded-2xl blur-sm opacity-50"></div>
-                <div className="glass-card border-2 border-brand-primary/50 px-12 py-4 rounded-2xl relative shadow-[0_0_30px_rgba(255,69,32,0.3)]">
-                    <h2 className="text-4xl md:text-5xl font-black text-white text-center tracking-wide drop-shadow-lg">
-                        Inversión
-                    </h2>
+        {/* Main Title */}
+        <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-black text-white mb-4">
+              Elige tu Plan y <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-500">empieza hoy</span>
+            </h2>
+            <p className="text-brand-light text-lg">Plan Individual (1 estudiante)</p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16 max-w-5xl mx-auto">
+            {/* 1 Year Plan */}
+            <div className="glass-card p-8 rounded-3xl border border-white/10 hover:border-purple-500/50 transition-all hover:scale-105">
+                <div className="bg-purple-600 text-white text-center py-3 rounded-2xl mb-6 font-bold text-lg">
+                    1 Año
+                </div>
+                <div className="text-center mb-6">
+                    <div className="text-5xl font-black text-white mb-2">USD 190</div>
+                    <p className="text-purple-400 font-bold uppercase tracking-wider text-sm">ÚNICO PAGO</p>
+                </div>
+                <button className="w-full bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-bold py-4 rounded-2xl transition-all transform hover:scale-105 shadow-lg">
+                    ¡INSCRÍBETE YA!
+                </button>
+            </div>
+
+            {/* 2 Years Plan - Featured */}
+            <div className="glass-card p-8 rounded-3xl border-2 border-purple-500 hover:border-purple-400 transition-all hover:scale-105 relative overflow-hidden">
+                <div className="absolute top-0 right-0 bg-yellow-400 text-purple-900 px-4 py-1 font-black text-xs rounded-bl-2xl">
+                    OFERTA LIMITADA
+                </div>
+                <div className="bg-purple-600 text-white text-center py-3 rounded-2xl mb-6 font-bold text-lg">
+                    2 Años
+                </div>
+                <div className="text-center mb-6">
+                    <div className="bg-yellow-400 text-purple-900 inline-block px-6 py-2 rounded-xl mb-3">
+                        <span className="text-2xl font-black">¡Aprovecha el 40% de descuento!</span>
+                    </div>
+                    <div className="bg-red-600 text-white inline-block px-6 py-2 rounded-xl mb-3">
+                        <span className="text-xl font-bold">Paga solo USD 220</span>
+                    </div>
+                    <div className="text-purple-400 font-bold text-lg mb-2">¡Ahorra USD 147!</div>
+                    <div className="text-gray-400 line-through text-sm">Valor real USD 367</div>
+                    <p className="text-purple-400 font-bold uppercase tracking-wider text-sm mt-2">ÚNICO PAGO</p>
+                    <p className="text-yellow-400 font-bold text-sm italic mt-2">Oferta exclusiva por tiempo limitado</p>
+                </div>
+                <button className="w-full bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-bold py-4 rounded-2xl transition-all transform hover:scale-105 shadow-lg">
+                    ¡INSCRÍBETE YA!
+                </button>
+            </div>
+        </div>
+
+        {/* Team Plans Section */}
+        <div className="text-center mb-12 mt-20">
+            <h3 className="text-3xl font-bold text-white mb-8">
+              Plan Team y <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">Plan para empresas</span>
+            </h3>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <button className="bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-bold py-4 px-10 rounded-full transition-all transform hover:scale-105 shadow-lg text-lg">
+                    ¡CLIC AQUÍ!
+                </button>
+                <button className="bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 text-white font-bold py-4 px-10 rounded-full transition-all transform hover:scale-105 shadow-lg text-lg">
+                    ¡MÁS INFORMACIÓN!
+                </button>
+            </div>
+        </div>
+
+        {/* Payment Methods */}
+        <div className="text-center mt-16">
+            <div className="flex justify-center items-center gap-6 flex-wrap">
+                <div className="flex items-center gap-2">
+                    <div className="h-12 bg-white rounded-lg flex items-center justify-center px-6 shadow-lg">
+                        <span className="text-blue-800 font-bold italic text-2xl">VISA</span>
+                    </div>
+                </div>
+                <div className="flex items-center gap-2">
+                    <div className="h-12 bg-white rounded-lg flex items-center justify-center px-6 shadow-lg">
+                        <div className="flex">
+                            <div className="w-7 h-7 rounded-full bg-red-600 opacity-80"></div>
+                            <div className="w-7 h-7 rounded-full bg-orange-400 opacity-80 -ml-3"></div>
+                        </div>
+                    </div>
+                </div>
+                <div className="flex items-center gap-2">
+                    <div className="h-12 bg-white rounded-lg flex items-center justify-center px-6 shadow-lg">
+                        <span className="text-blue-700 font-bold text-xl">AMERICAN EXPRESS</span>
+                    </div>
+                </div>
+                <div className="flex items-center gap-2">
+                    <div className="h-12 bg-orange-500 rounded-lg flex items-center justify-center px-6 shadow-lg">
+                        <span className="text-white font-bold text-xl">PayPal</span>
+                    </div>
+                </div>
+                <div className="flex items-center gap-2">
+                    <div className="h-12 bg-purple-600 rounded-lg flex items-center justify-center px-6 shadow-lg">
+                        <span className="text-white font-bold text-xl">Diners Club</span>
+                    </div>
                 </div>
             </div>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-            {/* Single Person Plan */}
-            <div className="flex flex-col items-center">
-                <h3 className="text-xl font-bold text-gray-200 uppercase tracking-wider mb-4">UNA PERSONA</h3>
-                <div className="w-full relative group transform hover:scale-105 transition-all duration-300">
-                    <div className="absolute -inset-1 bg-brand-primary rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
-                    <div className="relative bg-brand-primary rounded-2xl p-6 border-b-4 border-red-700 shadow-xl flex justify-center items-baseline text-white">
-                        <span className="text-3xl font-bold mr-2">S/</span>
-                        <span className="text-7xl font-extrabold tracking-tighter">300</span>
-                        <span className="text-3xl font-bold align-top ml-1">.00</span>
-                    </div>
-                </div>
-            </div>
-
-            {/* Group Plan */}
-            <div className="flex flex-col items-center">
-                <h3 className="text-xl font-bold text-gray-200 uppercase tracking-wider mb-4">PARA GRUPOS DE DOS PERSONAS A MÁS</h3>
-                <div className="w-full relative group transform hover:scale-105 transition-all duration-300">
-                    <div className="absolute -inset-1 bg-brand-primary rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
-                    <div className="relative bg-brand-primary rounded-2xl p-6 border-b-4 border-red-700 shadow-xl flex justify-center items-baseline text-white">
-                        <span className="text-3xl font-bold mr-2">S/</span>
-                        <span className="text-7xl font-extrabold tracking-tighter">280</span>
-                        <span className="text-3xl font-bold align-top ml-1">.00</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div className="text-center mb-8">
-            <p className="text-lg text-gray-300 mb-4 font-medium">Aceptamos todos los medios de pago:</p>
-            <div className="flex justify-center gap-4">
-                <div className="h-10 bg-white rounded flex items-center justify-center px-4 shadow-lg"><span className="text-blue-800 font-bold italic text-xl">VISA</span></div>
-                <div className="h-10 bg-white rounded flex items-center justify-center px-4 shadow-lg"><div className="flex"><div className="w-6 h-6 rounded-full bg-red-600 opacity-80"></div><div className="w-6 h-6 rounded-full bg-yellow-500 opacity-80 -ml-3"></div></div></div>
-                <div className="h-10 bg-[#742284] rounded flex items-center justify-center px-4 text-white font-bold italic shadow-lg">yape</div>
-            </div>
-        </div>
-
-        {/* Bank Details Card */}
-        <div className="glass-card rounded-3xl overflow-hidden border border-brand-primary/30 shadow-2xl relative">
-             <div className="absolute top-0 right-0 w-32 h-32 bg-brand-primary/10 rounded-full blur-3xl"></div>
-             
-             <div className="grid grid-cols-1 md:grid-cols-2">
-                 <div className="p-8 border-b md:border-b-0 md:border-r border-white/10 flex flex-col justify-center">
-                    <div className="mb-2 text-brand-light text-sm uppercase font-bold tracking-wider">Yape</div>
-                    <div className="text-3xl font-bold text-white mb-4">942 839 699</div>
-                    <div className="text-gray-300">
-                        <span className="block text-sm text-brand-light mb-1">A nombre del CEO:</span>
-                        <span className="font-semibold text-white text-lg">Alexandr Sánchez Bravo</span>
-                    </div>
-                 </div>
-                 
-                 <div className="p-8 space-y-4 bg-black/20">
-                    <div>
-                        <div className="text-brand-primary font-bold mb-1">Depósito: BCP (Soles)</div>
-                        <div className="flex items-center gap-2">
-                            <span className="text-xl text-white font-mono tracking-wide">193-2564960-0-85</span>
-                            <button className="text-brand-light hover:text-white"><Copy size={14}/></button>
-                        </div>
-                    </div>
-                    <div>
-                        <div className="text-brand-light text-sm font-bold mb-1">CCI:</div>
-                        <div className="flex items-center gap-2">
-                            <span className="text-lg text-gray-300 font-mono">00219300256496008512</span>
-                             <button className="text-brand-light hover:text-white"><Copy size={14}/></button>
-                        </div>
-                    </div>
-                    <div className="pt-2 border-t border-white/10 flex flex-col gap-1">
-                        <div className="flex justify-between">
-                            <span className="text-brand-light text-sm">Empresa:</span>
-                            <span className="font-bold text-white">FULLSTACK SAC</span>
-                        </div>
-                         <div className="flex justify-between">
-                            <span className="text-brand-light text-sm">RUC:</span>
-                            <span className="font-bold text-white">20603443030</span>
-                        </div>
-                    </div>
-                 </div>
-             </div>
-        </div>
-
-        {/* Footer Note */}
-        <div className="mt-8 flex justify-center">
-             <div className="border border-white py-3 px-8 rounded-lg">
-                <p className="text-white font-bold text-lg text-center uppercase">
-                    Para factura, se aplica el 18% adicional
-                </p>
-             </div>
         </div>
 
       </div>
