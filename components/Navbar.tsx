@@ -25,10 +25,10 @@ const Navbar: React.FC = () => {
             </div>
             <div className="hidden md:block">
               <div className="flex items-baseline space-x-6">
-                <a href="#" className="text-gray-200 hover:text-yellow-400 font-medium text-sm transition-colors">Inicio</a>
-                <a href="#" className="text-gray-200 hover:text-yellow-400 font-medium text-sm transition-colors">Plan Completo Odoo</a>
-                <a href="#" className="text-gray-200 hover:text-yellow-400 font-medium text-sm transition-colors">Precios</a>
-                <a href="#" className="text-gray-200 hover:text-yellow-400 font-medium text-sm transition-colors">Mis Cursos</a>
+                <a href="#hero" className="text-gray-200 hover:text-yellow-400 font-medium text-sm transition-colors">Inicio</a>
+                <a href="#modulos" className="text-gray-200 hover:text-yellow-400 font-medium text-sm transition-colors">Plan Completo Odoo</a>
+                <a href="#pricing" className="text-gray-200 hover:text-yellow-400 font-medium text-sm transition-colors">Precios</a>
+                <a href="#cursos" className="text-gray-200 hover:text-yellow-400 font-medium text-sm transition-colors">Cursos</a>
               </div>
             </div>
           </div>

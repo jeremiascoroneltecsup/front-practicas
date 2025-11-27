@@ -17,7 +17,9 @@ function App() {
     <div className="min-h-screen selection:bg-purple-500 selection:text-white font-sans">
       <Navbar />
       <main className="space-y-20">
-        <Hero />
+        <div id="hero">
+          <Hero />
+        </div>
         
         {/* Features - Metodología */}
         <Features />
@@ -26,13 +28,19 @@ function App() {
         <PathGrid />
         
         {/* Módulos de ODOO */}
-        <OdooModules />
+        <div id="modulos">
+          <OdooModules />
+        </div>
         
         {/* Pricing Plans */}
-        <Pricing />
+        <div id="pricing">
+          <Pricing />
+        </div>
 
         {/* Cursos Gratuitos */}
-        <CourseList />
+        <div id="cursos">
+          <CourseList />
+        </div>
         
         {/* Instructors */}
         <Instructors />

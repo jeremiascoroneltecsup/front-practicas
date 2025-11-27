@@ -10,11 +10,11 @@ const Footer: React.FC = () => {
             <div className="space-y-4">
                 <h4 className="font-bold text-white text-base mb-6 uppercase tracking-wider">Escuelas</h4>
                 <ul className="space-y-3 text-sm">
-                    <li><a href="#" className="text-gray-400 hover:text-green-400 transition-colors">Desarrollo Web</a></li>
-                    <li><a href="#" className="text-gray-400 hover:text-green-400 transition-colors">Implementación Odoo</a></li>
-                    <li><a href="#" className="text-gray-400 hover:text-green-400 transition-colors">Backend con Odoo</a></li>
-                    <li><a href="#" className="text-gray-400 hover:text-green-400 transition-colors">Odoo Funcional</a></li>
-                    <li><a href="#" className="text-gray-400 hover:text-green-400 transition-colors">Desarrollo Móvil</a></li>
+                    <li><a href="#" className="text-gray-400 hover:text-orange-400 transition-colors">Desarrollo Web</a></li>
+                    <li><a href="#" className="text-gray-400 hover:text-orange-400 transition-colors">Implementación Odoo</a></li>
+                    <li><a href="#" className="text-gray-400 hover:text-orange-400 transition-colors">Backend con Odoo</a></li>
+                    <li><a href="#" className="text-gray-400 hover:text-orange-400 transition-colors">Odoo Funcional</a></li>
+                    <li><a href="#" className="text-gray-400 hover:text-orange-400 transition-colors">Desarrollo Móvil</a></li>
                 </ul>
             </div>
 
@@ -22,11 +22,11 @@ const Footer: React.FC = () => {
             <div className="space-y-4">
                 <h4 className="font-bold text-white text-base mb-6 uppercase tracking-wider">FULLSTACK y comunidad</h4>
                 <ul className="space-y-3 text-sm">
-                    <li><a href="#" className="text-gray-400 hover:text-green-400 transition-colors">FULLSTACK Business</a></li>
-                    <li><a href="#" className="text-gray-400 hover:text-green-400 transition-colors">Live Classes</a></li>
-                    <li><a href="#" className="text-gray-400 hover:text-green-400 transition-colors">Lanzamientos</a></li>
-                    <li><a href="#" className="text-gray-400 hover:text-green-400 transition-colors">Trabaja con nosotros</a></li>
-                    <li><a href="#" className="text-gray-400 hover:text-green-400 transition-colors">Podcast</a></li>
+                    <li><a href="#" className="text-gray-400 hover:text-orange-400 transition-colors">FULLSTACK Business</a></li>
+                    <li><a href="#" className="text-gray-400 hover:text-orange-400 transition-colors">Live Classes</a></li>
+                    <li><a href="#" className="text-gray-400 hover:text-orange-400 transition-colors">Lanzamientos</a></li>
+                    <li><a href="#" className="text-gray-400 hover:text-orange-400 transition-colors">Trabaja con nosotros</a></li>
+                    <li><a href="#" className="text-gray-400 hover:text-orange-400 transition-colors">Podcast</a></li>
                 </ul>
             </div>
             
@@ -34,10 +34,10 @@ const Footer: React.FC = () => {
             <div className="space-y-4">
                 <h4 className="font-bold text-white text-base mb-6 uppercase tracking-wider">Recursos</h4>
                 <ul className="space-y-3 text-sm">
-                    <li><a href="#" className="text-gray-400 hover:text-green-400 transition-colors">Manual de Marca</a></li>
-                    <li><a href="#" className="text-gray-400 hover:text-green-400 transition-colors">Blog</a></li>
-                    <li><a href="#" className="text-gray-400 hover:text-green-400 transition-colors">Tutoriales</a></li>
-                    <li><a href="#" className="text-gray-400 hover:text-green-400 transition-colors">Documentación Odoo</a></li>
+                    <li><a href="#" className="text-gray-400 hover:text-orange-400 transition-colors">Manual de Marca</a></li>
+                    <li><a href="#" className="text-gray-400 hover:text-orange-400 transition-colors">Blog</a></li>
+                    <li><a href="#" className="text-gray-400 hover:text-orange-400 transition-colors">Tutoriales</a></li>
+                    <li><a href="#" className="text-gray-400 hover:text-orange-400 transition-colors">Documentación Odoo</a></li>
                 </ul>
             </div>
 
@@ -45,13 +45,13 @@ const Footer: React.FC = () => {
             <div className="space-y-4">
                 <h4 className="font-bold text-white text-base mb-6 uppercase tracking-wider">Soporte</h4>
                 <ul className="space-y-3 text-sm">
-                    <li><a href="#" className="text-gray-400 hover:text-green-400 transition-colors">Preguntas Frecuentes</a></li>
-                    <li><a href="#" className="text-gray-400 hover:text-green-400 transition-colors">Contáctanos</a></li>
-                    <li><a href="#" className="text-gray-400 hover:text-green-400 transition-colors">Términos y Condiciones</a></li>
-                    <li><a href="#" className="text-gray-400 hover:text-green-400 transition-colors">Privacidad</a></li>
+                    <li><a href="#" className="text-gray-400 hover:text-orange-400 transition-colors">Preguntas Frecuentes</a></li>
+                    <li><a href="#" className="text-gray-400 hover:text-orange-400 transition-colors">Contáctanos</a></li>
+                    <li><a href="#" className="text-gray-400 hover:text-orange-400 transition-colors">Términos y Condiciones</a></li>
+                    <li><a href="#" className="text-gray-400 hover:text-orange-400 transition-colors">Privacidad</a></li>
                     <li>
                         <div className="flex items-center gap-2 text-gray-400 mt-4">
-                            <Phone className="w-4 h-4 text-green-400" />
+                            <Phone className="w-4 h-4 text-orange-400" />
                             <span className="text-sm">(+51) 952528752</span>
                         </div>
                     </li>
@@ -59,37 +59,10 @@ const Footer: React.FC = () => {
             </div>
         </div>
         
-        {/* Reconocimientos */}
-        <div className="border-t border-white/5 pt-12 mb-12">
-            <h3 className="text-center text-gray-500 text-sm uppercase tracking-wider mb-8">Reconocimientos</h3>
-            <div className="grid grid-cols-2 md:grid-cols-5 gap-8 items-center justify-items-center">
-                <div className="text-center">
-                    <div className="text-3xl font-bold text-gray-600 mb-1">TIME</div>
-                    <p className="text-gray-500 text-xs">Top 40 Mejores Edtech<br/>del mundo - 2024</p>
-                </div>
-                <div className="text-center">
-                    <div className="text-2xl font-bold text-gray-600 mb-1">Y Combinator</div>
-                    <p className="text-gray-500 text-xs">Primera Startup Latina<br/>admitida en YC - 2014</p>
-                </div>
-                <div className="text-center">
-                    <div className="text-3xl font-bold text-gray-600 mb-1">EY</div>
-                    <p className="text-gray-500 text-xs">Primera Startup Edtech<br/>- 2018</p>
-                </div>
-                <div className="text-center">
-                    <div className="text-2xl font-bold text-gray-600 mb-1">🏆</div>
-                    <p className="text-gray-500 text-xs">CEO Ganador Medalla<br/>por innovación T4 & HP</p>
-                </div>
-                <div className="text-center">
-                    <div className="text-3xl font-bold text-gray-600 mb-1">Forbes</div>
-                    <p className="text-gray-500 text-xs">CEO Mejor<br/>Emprendedor del año</p>
-                </div>
-            </div>
-        </div>
-
         {/* Bottom */}
         <div className="border-t border-white/5 pt-8">
             <div className="flex flex-col md:flex-row justify-between items-center gap-6 mb-8">
-                <p className="text-gray-500 text-sm">De LATAM <span className="text-green-400">💚</span> para el mundo</p>
+                <p className="text-gray-500 text-sm">De LATAM <span className="text-orange-400">🧡</span> para el mundo</p>
                 
                 <div className="flex items-center gap-6">
                     <a href="#" className="text-gray-400 hover:text-white transition-colors">

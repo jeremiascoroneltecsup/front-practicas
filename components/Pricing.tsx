@@ -3,119 +3,138 @@ import { CheckCircle2, Copy } from 'lucide-react';
 
 const Pricing: React.FC = () => {
   return (
-    <section className="py-20 relative">
-      {/* Background glow for pricing */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-3xl h-full bg-purple-600/5 blur-[120px] rounded-full pointer-events-none"></div>
+    <section className="py-20 relative overflow-hidden">
+      {/* Background effects */}
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-purple-900/10 to-transparent"></div>
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-purple-600/5 blur-[150px] rounded-full"></div>
 
-      <div className="max-w-7xl mx-auto px-4 relative z-10">
+      <div className="max-w-6xl mx-auto px-4 relative z-10">
         
         {/* Main Title */}
         <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-black text-white mb-4">
-              Elige tu Plan y <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-500">empieza hoy</span>
+              Elige tu Plan y <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-400 via-purple-400 to-indigo-400">empieza hoy</span>
             </h2>
-            <p className="text-brand-light text-lg">Plan Individual (1 estudiante)</p>
+            <p className="text-gray-400 text-lg">Plan Individual (1 estudiante)</p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16 max-w-6xl mx-auto">
-            {/* 1 Year Plan */}
-            <div className="relative group">
-                <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-blue-600 rounded-3xl blur-xl opacity-20 group-hover:opacity-30 transition-opacity"></div>
-                <div className="relative bg-gradient-to-br from-gray-900 to-gray-800 border-2 border-purple-500/30 p-8 rounded-3xl hover:border-purple-500/60 transition-all">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
+            {/* Plan Basic - 1 Año */}
+            <div className="relative group h-full">
+                <div className="relative bg-[#1a1d2e] border border-gray-800 hover:border-purple-500/50 p-8 rounded-2xl transition-all h-full flex flex-col">
                     <div className="flex justify-between items-start mb-6">
                         <div>
-                            <p className="text-gray-400 text-sm mb-1">Para 1 estudiante</p>
-                            <h3 className="text-2xl font-black text-white">1 Año</h3>
+                            <p className="text-gray-500 text-xs mb-2">Para 1 estudiante</p>
+                            <h3 className="text-2xl font-bold text-white">Plan Basic</h3>
                         </div>
-                        <div className="bg-purple-600 text-white px-3 py-1 rounded-full text-xs font-bold">
+                        <div className="bg-purple-600 text-white px-3 py-1 rounded-full text-xs font-bold uppercase">
                             Mensual
                         </div>
                     </div>
                     
-                    <div className="mb-8">
-                        <div className="flex items-baseline gap-2">
-                            <span className="text-gray-400 text-xl">S/</span>
-                            <span className="text-6xl font-black text-white">149</span>
-                            <span className="text-gray-400">/mes</span>
+                    <div className="mb-6">
+                        <div className="flex items-baseline gap-1 mb-2">
+                            <span className="text-white text-4xl font-black">S/149</span>
+                            <span className="text-gray-400 text-lg">/mes</span>
                         </div>
-                        <p className="text-gray-400 text-sm mt-2">Cobro mensual recurrente</p>
+                        <p className="text-gray-500 text-sm">Cobro mensual recurrente</p>
                     </div>
 
-                    <div className="space-y-3 mb-8">
-                        <div className="flex items-center gap-3">
-                            <div className="w-5 h-5 rounded-full bg-green-500/20 flex items-center justify-center">
-                                <CheckCircle2 className="w-3 h-3 text-green-400" />
-                            </div>
-                            <span className="text-gray-300 text-sm">Contenido profesional y actualizado con certificados digitales</span>
+                    <div className="space-y-3 mb-6 flex-grow">
+                        <div className="flex items-start gap-3">
+                            <CheckCircle2 className="w-5 h-5 text-orange-400 flex-shrink-0 mt-0.5" />
+                            <span className="text-gray-300 text-sm leading-relaxed">Contenido profesional y actualizado con certificados digitales</span>
                         </div>
-                        <div className="flex items-center gap-3">
-                            <div className="w-5 h-5 rounded-full bg-gray-600 flex items-center justify-center">
-                                <span className="text-gray-400 text-xs">✕</span>
+                        <div className="flex items-start gap-3">
+                            <div className="w-5 h-5 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <span className="text-gray-600 text-lg">×</span>
                             </div>
-                            <span className="text-gray-500 text-sm">Certificados físicos para las rutas de aprendizaje profesional</span>
+                            <span className="text-gray-600 text-sm leading-relaxed">Certificados físicos para las rutas de aprendizaje profesional</span>
+                        </div>
+                        <div className="flex items-start gap-3">
+                            <div className="w-5 h-5 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <span className="text-gray-600 text-lg">×</span>
+                            </div>
+                            <span className="text-gray-600 text-sm leading-relaxed">Acceso a las escuelas de Startups, Inglés y liderazgo</span>
+                        </div>
+                        <div className="flex items-start gap-3">
+                            <div className="w-5 h-5 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <span className="text-gray-600 text-lg">×</span>
+                            </div>
+                            <span className="text-gray-600 text-sm leading-relaxed">Eventos exclusivos como FULLSTACK Conf</span>
+                        </div>
+                        <div className="flex items-start gap-3">
+                            <div className="w-5 h-5 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <span className="text-gray-600 text-lg">×</span>
+                            </div>
+                            <span className="text-gray-600 text-sm leading-relaxed">Descarga contenido en la app móvil</span>
                         </div>
                     </div>
                     
-                    <button className="w-full bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-bold py-4 rounded-xl transition-all transform hover:scale-[1.02] shadow-lg">
+                    <button className="w-full bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-bold py-3.5 rounded-xl transition-all shadow-lg">
                         Suscríbete a Plan Basic
                     </button>
                 </div>
             </div>
 
-            {/* 2 Years Plan - Featured */}
-            <div className="relative group">
-                <div className="absolute -inset-1 bg-gradient-to-r from-green-400 via-emerald-400 to-green-500 rounded-3xl blur-xl opacity-30 group-hover:opacity-50 transition-opacity"></div>
-                <div className="relative bg-gradient-to-br from-green-950 to-emerald-950 border-2 border-green-400 p-8 rounded-3xl">
-                    <div className="absolute -top-3 right-8 bg-gradient-to-r from-yellow-400 to-orange-400 text-gray-900 px-6 py-2 rounded-full font-black text-xs uppercase shadow-lg">
+            {/* Plan Expert - 2 Años (Featured) */}
+            <div className="relative group h-full">
+                <div className="absolute -inset-[1px] bg-gradient-to-r from-yellow-400 to-orange-500 rounded-2xl opacity-75"></div>
+                <div className="relative bg-[#1a1d2e] p-8 rounded-2xl h-full flex flex-col">
+                    <div className="absolute -top-3 -right-3 bg-gradient-to-r from-yellow-400 to-orange-500 text-gray-900 px-4 py-1.5 rounded-full font-black text-xs uppercase shadow-lg">
                         PRECIO ESPECIAL
                     </div>
                     
-                    <div className="flex justify-between items-start mb-6 mt-4">
+                    <div className="flex justify-between items-start mb-6 mt-2">
                         <div>
-                            <p className="text-green-300 text-sm mb-1">Para 1 estudiante</p>
-                            <h3 className="text-2xl font-black text-white">2 Años</h3>
+                            <p className="text-orange-300 text-xs mb-2">Para 1 estudiante</p>
+                            <h3 className="text-2xl font-bold text-white">Plan Expert</h3>
                         </div>
-                        <div className="bg-green-400 text-gray-900 px-3 py-1 rounded-full text-xs font-bold">
+                        <div className="bg-gradient-to-r from-yellow-400 to-orange-500 text-gray-900 px-3 py-1 rounded-full text-xs font-bold uppercase">
                             Anual
                         </div>
                     </div>
                     
                     <div className="mb-6">
                         <div className="flex items-baseline gap-2 mb-2">
-                            <span className="text-gray-400 text-xl line-through">S/669</span>
-                            <span className="bg-green-400 text-gray-900 px-2 py-1 rounded text-xs font-bold">Ahorras S/221</span>
+                            <span className="text-gray-500 text-lg line-through">S/890</span>
+                            <span className="bg-gradient-to-r from-yellow-400 to-orange-500 text-gray-900 px-2 py-0.5 rounded-md text-xs font-bold">Ahorras S/221</span>
                         </div>
-                        <div className="flex items-baseline gap-2">
-                            <span className="text-green-400 text-xl">S/</span>
-                            <span className="text-6xl font-black text-white">899</span>
-                            <span className="text-green-300">/año</span>
+                        <div className="flex items-baseline gap-1 mb-2">
+                            <span className="text-white text-4xl font-black">S/669</span>
+                            <span className="text-orange-300 text-lg">/año</span>
                         </div>
-                        <p className="text-green-300 text-sm mt-2">Paga a 4 cuotas sin intereses de S/168</p>
+                        <p className="text-orange-300 text-sm flex items-center gap-2">
+                            <span className="inline-flex items-center justify-center w-4 h-4 rounded-full bg-orange-500/20 text-[10px]">ℹ</span>
+                            Paga a 4 cuotas sin intereses de S/168
+                        </p>
                     </div>
 
-                    <div className="space-y-3 mb-8">
-                        <div className="flex items-center gap-3">
-                            <div className="w-5 h-5 rounded-full bg-green-500/20 flex items-center justify-center">
-                                <CheckCircle2 className="w-3 h-3 text-green-400" />
-                            </div>
-                            <span className="text-gray-200 text-sm font-medium">Contenido profesional y actualizado con certificados digitales</span>
+                    <div className="space-y-3 mb-6 flex-grow">
+                        <div className="flex items-start gap-3">
+                            <CheckCircle2 className="w-5 h-5 text-orange-400 flex-shrink-0 mt-0.5" />
+                            <span className="text-white text-sm font-medium leading-relaxed">Contenido profesional y actualizado con certificados digitales</span>
                         </div>
-                        <div className="flex items-center gap-3">
-                            <div className="w-5 h-5 rounded-full bg-green-500/20 flex items-center justify-center">
-                                <CheckCircle2 className="w-3 h-3 text-green-400" />
-                            </div>
-                            <span className="text-gray-200 text-sm font-medium">Certificados físicos para las rutas de aprendizaje profesional</span>
+                        <div className="flex items-start gap-3">
+                            <CheckCircle2 className="w-5 h-5 text-orange-400 flex-shrink-0 mt-0.5" />
+                            <span className="text-white text-sm font-medium leading-relaxed">Certificados físicos para las rutas de aprendizaje profesional</span>
                         </div>
-                        <div className="flex items-center gap-3">
-                            <div className="w-5 h-5 rounded-full bg-green-500/20 flex items-center justify-center">
-                                <CheckCircle2 className="w-3 h-3 text-green-400" />
-                            </div>
-                            <span className="text-gray-200 text-sm font-medium">Eventos exclusivos como Platzi Conf</span>
+                        <div className="flex items-start gap-3">
+                            <CheckCircle2 className="w-5 h-5 text-orange-400 flex-shrink-0 mt-0.5" />
+                            <span className="text-white text-sm font-medium leading-relaxed">Acceso a las escuelas de Startups, Inglés y liderazgo</span>
+                        </div>
+                        <div className="flex items-start gap-3">
+                            <CheckCircle2 className="w-5 h-5 text-orange-400 flex-shrink-0 mt-0.5" />
+                            <span className="text-white text-sm font-medium leading-relaxed">Eventos exclusivos como FULLSTACK Conf</span>
+                        </div>
+                        <div className="flex items-start gap-3">
+                            <CheckCircle2 className="w-5 h-5 text-orange-400 flex-shrink-0 mt-0.5" />
+                            <span className="text-white text-sm font-medium leading-relaxed">Descarga contenido en la app móvil</span>
                         </div>
                     </div>
                     
-                    <button className="w-full bg-gradient-to-r from-green-400 to-emerald-400 hover:from-green-500 hover:to-emerald-500 text-gray-900 font-bold py-4 rounded-xl transition-all transform hover:scale-[1.02] shadow-xl">
-                        Suscríbete a Plan Expert Duo
+                    <button className="w-full bg-gradient-to-r from-yellow-400 to-orange-500 hover:from-yellow-500 hover:to-orange-600 text-gray-900 font-bold py-3.5 rounded-xl transition-all shadow-xl">
+                        Suscríbete a Plan Expert
                     </button>
                 </div>
             </div>

@@ -1,62 +1,70 @@
 import React from 'react';
-import { Rocket, Zap, Users, Trophy, Target, DollarSign, BookOpen, Award } from 'lucide-react';
+import { Target, Zap, GraduationCap, TrendingUp, BookOpen, Star, Video, Code } from 'lucide-react';
 
 const Benefits = () => {
   const benefits = [
     {
-      icon: "🎯",
+      icon: <Target className="w-8 h-8" />,
       title: "Ruta efectiva de aprendizaje",
       description: "Estudia Odoo siguiendo una ruta efectiva de cursos, diseñada para optimizar tu aprendizaje y dominio del sistema.",
       color: "from-purple-500 to-purple-600",
-      lightBg: "bg-purple-500/10"
+      lightBg: "bg-purple-500/10",
+      iconColor: "text-purple-400"
     },
     {
-      icon: "⚡",
+      icon: <Zap className="w-8 h-8" />,
       title: "Trabaja a corto plazo",
       description: "Aprende Odoo, uno de los cursos más demandados, y encuentra trabajo de inmediato.",
       color: "from-blue-500 to-blue-600",
-      lightBg: "bg-blue-500/10"
+      lightBg: "bg-blue-500/10",
+      iconColor: "text-blue-400"
     },
     {
-      icon: "🎓",
+      icon: <GraduationCap className="w-8 h-8" />,
       title: "Mejores oportunidades laborales",
       description: "Capacítate en Odoo y accede a nuevas oportunidades laborales.",
       color: "from-pink-500 to-pink-600",
-      lightBg: "bg-pink-500/10"
+      lightBg: "bg-pink-500/10",
+      iconColor: "text-pink-400"
     },
     {
-      icon: "💰",
+      icon: <TrendingUp className="w-8 h-8" />,
       title: "Aumenta tus ingresos",
       description: "Odoo optimiza tu negocio y te ayuda a incrementar tus ingresos de manera eficiente.",
       color: "from-green-500 to-green-600",
-      lightBg: "bg-green-500/10"
+      lightBg: "bg-green-500/10",
+      iconColor: "text-green-400"
     }
   ];
 
   const additionalBenefits = [
     {
-      icon: "📚",
+      icon: <BookOpen className="w-8 h-8" />,
       title: "Cursos de Odoo",
       description: "Cursos de Odoo, el ERP líder a nivel mundial.",
-      color: "border-purple-500/30"
+      color: "border-purple-500/30",
+      iconColor: "text-purple-400"
     },
     {
-      icon: "⭐",
+      icon: <Star className="w-8 h-8" />,
       title: "Cursos Recomendados",
       description: "Hemos capacitado a más de 3000 alumnos que nos recomiendan",
-      color: "border-blue-500/30"
+      color: "border-blue-500/30",
+      iconColor: "text-blue-400"
     },
     {
-      icon: "🎥",
+      icon: <Video className="w-8 h-8" />,
       title: "Acceso a sesiones en vivo",
       description: "Solo para los estudiantes donde expondremos proyectos, experiencias y conocimientos.",
-      color: "border-green-500/30"
+      color: "border-green-500/30",
+      iconColor: "text-green-400"
     },
     {
-      icon: "🚀",
+      icon: <Code className="w-8 h-8" />,
       title: "Metodología con enfoque práctico",
       description: "Cursos desarrollados y aplicados en proyectos reales y casos prácticos.",
-      color: "border-pink-500/30"
+      color: "border-pink-500/30",
+      iconColor: "text-pink-400"
     }
   ];
 
@@ -80,8 +88,10 @@ const Benefits = () => {
               className={`${benefit.lightBg} backdrop-blur-sm border border-white/10 p-8 rounded-3xl hover:scale-105 hover:border-white/30 transition-all duration-300 group cursor-pointer`}
             >
               <div className="text-center">
-                <div className="text-6xl mb-6 group-hover:scale-110 transition-transform">
-                  {benefit.icon}
+                <div className={`inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br ${benefit.color} mb-6 group-hover:scale-110 transition-transform shadow-xl`}>
+                  <div className={benefit.iconColor}>
+                    {benefit.icon}
+                  </div>
                 </div>
                 <h3 className="text-white font-bold text-xl mb-3">{benefit.title}</h3>
                 <p className="text-gray-300 leading-relaxed text-sm">{benefit.description}</p>
@@ -103,7 +113,7 @@ const Benefits = () => {
                 key={index}
                 className={`glass-card border-2 ${benefit.color} p-8 rounded-3xl text-center hover:scale-105 hover:shadow-2xl transition-all duration-300 group cursor-pointer`}
               >
-                <div className="text-5xl mb-4 group-hover:scale-110 transition-transform">
+                <div className={`inline-flex items-center justify-center ${benefit.iconColor} mb-4 group-hover:scale-110 transition-transform`}>
                   {benefit.icon}
                 </div>
                 <h3 className="text-xl font-bold text-white mb-3">{benefit.title}</h3>
