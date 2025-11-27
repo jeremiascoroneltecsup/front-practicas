@@ -17,44 +17,107 @@ const Pricing: React.FC = () => {
             <p className="text-brand-light text-lg">Plan Individual (1 estudiante)</p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16 max-w-6xl mx-auto">
             {/* 1 Year Plan */}
-            <div className="glass-card p-8 rounded-3xl border border-white/10 hover:border-purple-500/50 transition-all hover:scale-105">
-                <div className="bg-purple-600 text-white text-center py-3 rounded-2xl mb-6 font-bold text-lg">
-                    1 Año
+            <div className="relative group">
+                <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-blue-600 rounded-3xl blur-xl opacity-20 group-hover:opacity-30 transition-opacity"></div>
+                <div className="relative bg-gradient-to-br from-gray-900 to-gray-800 border-2 border-purple-500/30 p-8 rounded-3xl hover:border-purple-500/60 transition-all">
+                    <div className="flex justify-between items-start mb-6">
+                        <div>
+                            <p className="text-gray-400 text-sm mb-1">Para 1 estudiante</p>
+                            <h3 className="text-2xl font-black text-white">1 Año</h3>
+                        </div>
+                        <div className="bg-purple-600 text-white px-3 py-1 rounded-full text-xs font-bold">
+                            Mensual
+                        </div>
+                    </div>
+                    
+                    <div className="mb-8">
+                        <div className="flex items-baseline gap-2">
+                            <span className="text-gray-400 text-xl">S/</span>
+                            <span className="text-6xl font-black text-white">149</span>
+                            <span className="text-gray-400">/mes</span>
+                        </div>
+                        <p className="text-gray-400 text-sm mt-2">Cobro mensual recurrente</p>
+                    </div>
+
+                    <div className="space-y-3 mb-8">
+                        <div className="flex items-center gap-3">
+                            <div className="w-5 h-5 rounded-full bg-green-500/20 flex items-center justify-center">
+                                <CheckCircle2 className="w-3 h-3 text-green-400" />
+                            </div>
+                            <span className="text-gray-300 text-sm">Contenido profesional y actualizado con certificados digitales</span>
+                        </div>
+                        <div className="flex items-center gap-3">
+                            <div className="w-5 h-5 rounded-full bg-gray-600 flex items-center justify-center">
+                                <span className="text-gray-400 text-xs">✕</span>
+                            </div>
+                            <span className="text-gray-500 text-sm">Certificados físicos para las rutas de aprendizaje profesional</span>
+                        </div>
+                    </div>
+                    
+                    <button className="w-full bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-bold py-4 rounded-xl transition-all transform hover:scale-[1.02] shadow-lg">
+                        Suscríbete a Plan Basic
+                    </button>
                 </div>
-                <div className="text-center mb-6">
-                    <div className="text-5xl font-black text-white mb-2">USD 190</div>
-                    <p className="text-purple-400 font-bold uppercase tracking-wider text-sm">ÚNICO PAGO</p>
-                </div>
-                <button className="w-full bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-bold py-4 rounded-2xl transition-all transform hover:scale-105 shadow-lg">
-                    ¡INSCRÍBETE YA!
-                </button>
             </div>
 
             {/* 2 Years Plan - Featured */}
-            <div className="glass-card p-8 rounded-3xl border-2 border-purple-500 hover:border-purple-400 transition-all hover:scale-105 relative overflow-hidden">
-                <div className="absolute top-0 right-0 bg-yellow-400 text-purple-900 px-4 py-1 font-black text-xs rounded-bl-2xl">
-                    OFERTA LIMITADA
-                </div>
-                <div className="bg-purple-600 text-white text-center py-3 rounded-2xl mb-6 font-bold text-lg">
-                    2 Años
-                </div>
-                <div className="text-center mb-6">
-                    <div className="bg-yellow-400 text-purple-900 inline-block px-6 py-2 rounded-xl mb-3">
-                        <span className="text-2xl font-black">¡Aprovecha el 40% de descuento!</span>
+            <div className="relative group">
+                <div className="absolute -inset-1 bg-gradient-to-r from-green-400 via-emerald-400 to-green-500 rounded-3xl blur-xl opacity-30 group-hover:opacity-50 transition-opacity"></div>
+                <div className="relative bg-gradient-to-br from-green-950 to-emerald-950 border-2 border-green-400 p-8 rounded-3xl">
+                    <div className="absolute -top-3 right-8 bg-gradient-to-r from-yellow-400 to-orange-400 text-gray-900 px-6 py-2 rounded-full font-black text-xs uppercase shadow-lg">
+                        PRECIO ESPECIAL
                     </div>
-                    <div className="bg-red-600 text-white inline-block px-6 py-2 rounded-xl mb-3">
-                        <span className="text-xl font-bold">Paga solo USD 220</span>
+                    
+                    <div className="flex justify-between items-start mb-6 mt-4">
+                        <div>
+                            <p className="text-green-300 text-sm mb-1">Para 1 estudiante</p>
+                            <h3 className="text-2xl font-black text-white">2 Años</h3>
+                        </div>
+                        <div className="bg-green-400 text-gray-900 px-3 py-1 rounded-full text-xs font-bold">
+                            Anual
+                        </div>
                     </div>
-                    <div className="text-purple-400 font-bold text-lg mb-2">¡Ahorra USD 147!</div>
-                    <div className="text-gray-400 line-through text-sm">Valor real USD 367</div>
-                    <p className="text-purple-400 font-bold uppercase tracking-wider text-sm mt-2">ÚNICO PAGO</p>
-                    <p className="text-yellow-400 font-bold text-sm italic mt-2">Oferta exclusiva por tiempo limitado</p>
+                    
+                    <div className="mb-6">
+                        <div className="flex items-baseline gap-2 mb-2">
+                            <span className="text-gray-400 text-xl line-through">S/669</span>
+                            <span className="bg-green-400 text-gray-900 px-2 py-1 rounded text-xs font-bold">Ahorras S/221</span>
+                        </div>
+                        <div className="flex items-baseline gap-2">
+                            <span className="text-green-400 text-xl">S/</span>
+                            <span className="text-6xl font-black text-white">899</span>
+                            <span className="text-green-300">/año</span>
+                        </div>
+                        <p className="text-green-300 text-sm mt-2">Paga a 4 cuotas sin intereses de S/168</p>
+                    </div>
+
+                    <div className="space-y-3 mb-8">
+                        <div className="flex items-center gap-3">
+                            <div className="w-5 h-5 rounded-full bg-green-500/20 flex items-center justify-center">
+                                <CheckCircle2 className="w-3 h-3 text-green-400" />
+                            </div>
+                            <span className="text-gray-200 text-sm font-medium">Contenido profesional y actualizado con certificados digitales</span>
+                        </div>
+                        <div className="flex items-center gap-3">
+                            <div className="w-5 h-5 rounded-full bg-green-500/20 flex items-center justify-center">
+                                <CheckCircle2 className="w-3 h-3 text-green-400" />
+                            </div>
+                            <span className="text-gray-200 text-sm font-medium">Certificados físicos para las rutas de aprendizaje profesional</span>
+                        </div>
+                        <div className="flex items-center gap-3">
+                            <div className="w-5 h-5 rounded-full bg-green-500/20 flex items-center justify-center">
+                                <CheckCircle2 className="w-3 h-3 text-green-400" />
+                            </div>
+                            <span className="text-gray-200 text-sm font-medium">Eventos exclusivos como Platzi Conf</span>
+                        </div>
+                    </div>
+                    
+                    <button className="w-full bg-gradient-to-r from-green-400 to-emerald-400 hover:from-green-500 hover:to-emerald-500 text-gray-900 font-bold py-4 rounded-xl transition-all transform hover:scale-[1.02] shadow-xl">
+                        Suscríbete a Plan Expert Duo
+                    </button>
                 </div>
-                <button className="w-full bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-bold py-4 rounded-2xl transition-all transform hover:scale-105 shadow-lg">
-                    ¡INSCRÍBETE YA!
-                </button>
             </div>
         </div>
 

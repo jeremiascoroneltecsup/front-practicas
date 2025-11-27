@@ -6,6 +6,7 @@ import OdooModules from './components/OdooModules';
 import PathGrid from './components/PathGrid';
 import CourseList from './components/CourseList';
 import Pricing from './components/Pricing';
+import Instructors from './components/Instructors';
 import Testimonials from './components/Testimonials';
 import Benefits from './components/Benefits';
 import AiMentor from './components/AiMentor';
@@ -32,6 +33,9 @@ function App() {
 
         {/* Cursos Gratuitos */}
         <CourseList />
+        
+        {/* Instructors */}
+        <Instructors />
         
         {/* Testimonials */}
         <Testimonials />
